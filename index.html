@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title>Personal Website</title>
+  </head>
+  <body class="">
+    <!--Navigation bar-->
+    <header class="px-4 pt-2 md:pt-4">
+      <div class="flex justify-between">
+        <div class="w-16 h-16 "><img class="rounded-full" src="images/code.png" alt=""></div>
+        <div class="text-2xl font-serif text-[#060f32] hidden md:flex gap-4 lg:gap-12 self-center">
+          <p class="hover:underline hover:text-orange-700 decoration-2 decoration-orange-700 underline-offset-8"><a href="">Home</a></p>
+          <p class="hover:underline hover:text-orange-700 decoration-2 decoration-orange-700 underline-offset-8"><a href="">About</a></p>
+          <div class="group relative">
+            <p  class="hover:text-orange-700"><a href="">Members <i class="fa-solid fa-angle-down"></i></a></p>
+            <div class="hidden p-4 absolute -left-20 -right-20 top-8 group-hover:flex flex-col gap-4 bg-white ">
+              <div class="flex gap-2">
+                <div class="w-12 h-12"><img class="rounded-full" src="images/Evariste.jpg" alt=""></div>
+                <p class="text-lg self-center">Evariste Nkurunziza</p>
+              </div>
+              <div class="flex gap-2">
+                <div class="w-12 h-12"><img class="rounded-full" src="images/Evariste.jpg" alt=""></div>
+                <p class="text-lg self-center">Niyongabo Kenny Bonheur</p>
+              </div>
+              <div class="flex gap-2">
+                <div class="w-12 h-12"><img class="rounded-full" src="images/Evariste.jpg" alt=""></div>
+                <p class="text-lg self-center">Cynthia Umubyeyi</p>
+              </div>
+            </div>
+          </div>
+          <div class="group relative">
+            <p class="hover:text-orange-700"><a href="">Profiles <i class="fa-solid fa-angle-down"></i></a></p>
+            <div class="hidden group-hover:flex absolute flex-col gap-2 right-0 bg-white p-4">
+              <div class="flex gap-2">
+                <div class="w-12 h-12"><img class="rounded-full" src="images/Evariste.jpg" alt=""></div>
+                <div class=" w-52 h-10 hover:bg-[#060f32] hover:text-white transition duration-500 ease-in-out flex justify-center rounded-full group "><button>View Portifolio <i class="fa-solid fa-arrow-right"></i></button></div>
+
+              </div>
+              <div class="flex gap-2">
+                <div class="w-12 h-12"><img class="rounded-full" src="images/Evariste.jpg" alt=""></div>
+                <div class=" w-52 h-10 hover:bg-[#060f32] hover:text-white transition duration-500 ease-in-out flex justify-center rounded-full group "><button>View Portifolio <i class="fa-solid fa-arrow-right"></i> </button></div>
+              </div>
+              <div class="flex gap-2">
+                <div class="w-12 h-12"><img class="rounded-full" src="images/Evariste.jpg" alt=""></div>
+                <div class=" w-52 h-10 hover:bg-[#060f32] hover:text-white transition duration-500 ease-in-out flex justify-center rounded-full group "><button>View Portifolio <i class="fa-solid fa-arrow-right"></i> </button></div>
+
+              </div>
+            </div>
+          </div>
+          <p><i class="fa-solid fa-moon"></i></p>
+        </div>
+        <div class="md:hidden text-[#060f32] self-center">
+          <div id="open" ><p class="text-3xl flex justify-end"><i class="fa-solid fa-bars"></i></p></div>
+          <div id="menu" class="hidden absolute bg-[#060f32] top-0 bottom-0 left-0 right-0 z-10 bg-opacity-90">
+            <div class="relative mt-36 mx-10 bg-white pt-12 p-4">
+              <ul class="text-4xl font-serif flex flex-col gap-6 items-center ">
+                <li class="hover:underline hover:text-orange-700 decoration-2 decoration-orange-700 underline-offset-8"><a href=""></a>Home</li>
+                <li class="hover:underline hover:text-orange-700 decoration-2 decoration-orange-700 underline-offset-8"><a href=""></a>About</li>
+                <li class="hover:underline hover:text-orange-700 decoration-2 decoration-orange-700 underline-offset-8"><a href=""></a>Members</li>
+                <li class="hover:underline hover:text-orange-700 decoration-2 decoration-orange-700 underline-offset-8"><a href=""></a>Profiles</li>
+                <li><a href=""></a>Dark mode</li>
+              </ul>
+              <div id="close" class="hidden absolute top-0 right-2"><p class="text-3xl"><i class="fa-solid fa-x"></i></p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="bg-[url('images/bg.png')] bg-cover bg-no-repeat">
+        <div class="text-white px-4 py-8 text-xl flex flex-col items-center gap-8">
+          <div class="flex flex-col items-center gap-4">
+            <p class="text-5xl bg-blue-600 bg-opacity-30 h-20 w-20 flex justify-center items-center rounded-full"><i class="fa-solid fa-code"></i></p>
+            <p class="text-3xl">SOFTWARE DEVELOPERS</p>
+            <p class="opacity-80 lg:w-1/2">We are a collective of passionate software developers, designers, and innovators
+             dedicated to building exceptional digital experiences that make a difference.</p>
+          </div>
+          <div class="flex gap-12 lg:gap-24">
+            <div class="flex flex-col items-center gap-1">
+              <div class="">
+                <p class="text-6xl opacity-80"><i class="fa-solid fa-user-group"></i></p>
+              </div>
+              <div class="flex text-3xl gap-2 ">
+                <p class=" text-white">3</p>
+                <p>Members</p>
+              </div>
+              
+            </div>
+            <div class="flex flex-col items-center">
+              <div class="">
+                <p class="text-6xl opacity-80"><i class="fa-solid fa-code"></i></p>
+              </div>
+              <div class="flex text-3xl gap-2 ">
+                <p class=" text-white">6+</p>
+                <p>Projects</p>
+              </div>
+          </div>
+        </div>
+        <div class="w-44 h-12 text-2xl font-serif text-[#060f32] bg-white flex justify-center rounded-full"><button>Explore More</button></div>
+        
+
+      </div>
+    </main>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
