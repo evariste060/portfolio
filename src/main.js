@@ -53,9 +53,12 @@ let phoneDark = document.getElementById('fd')
 function changeMode(){
     const element = document.querySelector('html').classList
     element.toggle('dark')
-    console.log(element)
 }
 dark.addEventListener('click',changeMode)
-phoneDark.addEventListener('click',changeMode)
+phoneDark.addEventListener('click',()=>{
+    const element = document.querySelector('html').classList
+    element.toggle('dark')
+  menu.classList.toggle('hidden');
+})
 
 

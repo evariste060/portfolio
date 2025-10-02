@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet">
+
+    <title>Evariste Portfolio</title>
+</head>
+<body>
+    <!--navigation bar-->
+    <header class="px-10 bg-gray-300 py-4 sticky top-0 z-10">
+      <div class="flex justify-between">
+        <div class="font-serif text-2xl text-[#060f32]"><p>Portfolio</p></div>
+        <!--navigation bar of the tablet and the laptop-->
+        <div class="text-2xl font-serif text-[#060f32] hidden md:flex gap-4 lg:gap-12 self-center">
+          <p class="hover:underline  decoration-2 decoration-[#060f32] underline-offset-8"><a href="#about">About</a></p>
+          <p class="hover:underline  decoration-2 decoration-[#060f32] underline-offset-8"><a href="#skills">Skills</a></p>
+          <div class="group relative">
+            <p  class="hover:underline  decoration-2 decoration-[#060f32] underline-offset-8"><a href="#hobbies">Hobbies</a></p>
+          </div>
+          <div class="group relative">
+            <p class="hover:underline  decoration-2 decoration-[#060f32] underline-offset-8"><a href="#contact">Contacts</a></p>
+          </div>
+          <div id="dark"><p><i class="fa-solid fa-moon"></i></p></div>
+        </div>
+        <!--header content of the small screen and phones-->
+        <div class="md:hidden text-[#060f32] self-center">
+          <div id="open" ><p class="text-3xl flex justify-end"><i class="fa-solid fa-bars"></i></p></div>
+        </div>
+      </div>
+      </div>
+    </header>
+    <!--menu-->
+     <div id="menu" class="hidden absolute bg-[#060f32] z-20 top-0 bottom-0 right-0 left-0 bg-opacity-90">
+        <div class=" sticky top-20 mx-10 bg-white dark:bg-gray-700">
+            <ul class="text-4xl font-serif flex flex-col gap-6 items-center ">
+            <li class="hover:underline decoration-2 decoration-orange-700 underline-offset-8"><a href="#about"></a>About</li>
+            <li class="hover:underline decoration-2 decoration-orange-700 underline-offset-8"><a href="#skills"></a>Skills</li>
+            <li class="hover:underline decoration-2 decoration-orange-700 underline-offset-8"><a href="#hobbies"></a>Hobbies</li>
+            <li class="hover:underline decoration-2 decoration-orange-700 underline-offset-8"><a href="#contact"></a>Contacts</li>
+            <li id="fd"><a href=""></a>Dark</li>
+            </ul>
+        </div>
+    </div>
+    <main>
+        <!--about me section-->
+        <section id="about" class="px-8 py-10 bg-gray-200">
+            <div class="flex flex-col  md:flex-row justify-between gap-4 lg:mx-12">
+                <div class="self-center md:w-7/12">
+                    <h1 class="text-3xl font-semibold text-blue-900 pb-8">Hi, I am <span>Evariste Nkurunziza</span></h1>
+                    <p class="text-lg text-[#060f32]">
+                        I am a Computer Science student at <em class="font-semibold">University of Rwanda</em>  with a strong passion for software development. 
+                        I enjoy turning ideas into real-world solutions through coding, problem-solving, 
+                        and teamwork. My focus is on continuously learning new technologies and applying 
+                        them to build efficient, user-friendly, and impactful applications.
+                    </p>
+                </div>
+                <div class="flex justify-center group -order-1 md:order-1">
+                    <div class=" w-80 rounded-full overflow-hidden relative">
+                        <img class="rounded-full  group-hover:scale-110 transition duration-1000 ease-in-out" src="images/new1.jpg" alt="">
+                        <div class=" absolute top-0 bottom-0 right-0 left-0 rounded-full opacity-10 hidden group-hover:transition group-hover:duration-1000 ease-in-out group-hover:block"></div>
+                    </div>
+                </div>
+                    
+            </div>
+        </section>
+        <!--skills section-->
+        <section id="skills">
+            <div class="px-12">
+                <div class="text-center py-8">
+                    <h1 class="text-3xl font-bold text-[#060f32]">Technical Skills</h1>
+                    <p class="text-lg">Technologies I've mastered and tools I've used so far</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="px-2 bg-slate-100 border-[1px] border-gray-400 py-4 rounded-xl hover:scale-105 transition duration-700 ease-in-out hover:shadow-eva">
+                        <div class="text-lg text-[#060f32] flex flex-col items-center gap-2">
+                            <p class="text-3xl text-orange-800"><i class="fa-brands fa-html5"></i></p>
+                            <h1 class="text-2xl text-blue-900 font-bold">HTML</h1>
+                            <div class="w-40 border-[1px] border-gray-400 rounded-full flex justify-center text-xl font-semibold"><p>Advanced</p></div>
+                            <p>Semantic markup, accessibility, and web standards</p>
+                        </div>
+                    </div>
+                    <div class="px-2 bg-slate-100 border-[1px] border-gray-400 py-4 rounded-xl hover:scale-105 transition duration-700 ease-in-out hover:shadow-eva">
+                        <div class="text-lg text-[#060f32] flex flex-col items-center gap-2">
+                            <p class="text-3xl text-blue-400"><i class="ri-tailwind-css-fill"></i></p>
+                            <h1 class="text-2xl text-blue-900 font-bold">TailwindCss</h1>
+                            <div class="w-40 border-[1px] border-gray-400 rounded-full flex justify-center text-xl font-semibold"><p>Advanced</p></div>
+                            <p>Responsive design, animations, and modern layouts</p>
+                        </div>
+                    </div>
+                    <div class="px-2 bg-slate-100 border-[1px] border-gray-400 py-4 rounded-xl hover:scale-105 transition duration-700 ease-in-out hover:shadow-eva">
+                        <div class="text-lg text-[#060f32] flex flex-col items-center gap-2">
+                            <p class="text-3xl text-yellow-600"><i class="fa-brands fa-js"></i></p>
+                            <h1 class="text-2xl text-blue-900 font-bold">JAVASCRIPT</h1>
+                            <div class="w-40 border-[1px] border-gray-400 rounded-full flex justify-center text-xl font-semibold"><p>Advanced</p></div>
+                            <p>Frontend development, DOM manipulation, ES6+</p>
+                        </div>
+                    </div>
+                    <div class="px-2 bg-slate-100 border-[1px] border-gray-400 py-4 rounded-xl hover:scale-105 transition duration-700 ease-in-out hover:shadow-eva">
+                        <div class="text-lg text-[#060f32] flex flex-col items-center gap-2">
+                            <p class="text-3xl "><i class="fa-brands fa-python"></i></p>
+                            <h1 class="text-2xl text-blue-900 font-bold">PYTHON</h1>
+                            <div class="w-40 border-[1px] border-gray-400 rounded-full flex justify-center text-xl font-semibold"><p>Intermediate</p></div>
+                            <p>Backend development, data analysis, automation</p>
+                        </div>
+                    </div>
+                </div>
+                <!--other skills-->
+                <div class="flex flex-col md:flex-row gap-12 py-20">
+                    <div class="border-[1px] border-gray-300 p-4 rounded-xl hover:scale-105 transition duration-700 ease-in-out hover:shadow-eva">
+                        <div class="text-center py-8">
+                            <h1 class="text-3xl font-bold text-[#060f32]">Additional Skills</h1>
+                                <p class="text-lg">Always expanding my toolkit with new technologies</p>
+                        </div>
+                        <div class="text-lg font-semibold flex flex-row  gap-4 justify-center flex-wrap ">
+                            <p class="w-52 border-[1px] transition duration-700 ease-in-out border-blue-500 text-center rounded-full hover:text-white hover:bg-[#060f32]">Git & Version Control</p>
+                            <p class="w-52 border-[1px] transition duration-700 ease-in-out border-blue-500 text-center rounded-full hover:text-white hover:bg-[#060f32]">Trello & Notion</p>
+                            <p class="w-52 border-[1px] transition duration-700 ease-in-out border-blue-500 text-center rounded-full hover:text-white hover:bg-[#060f32]">Problem Solving</p>
+                            <p class="w-52 border-[1px] transition duration-700 ease-in-out border-blue-500 text-center rounded-full hover:text-white hover:bg-[#060f32]">Microsoft Office</p>
+                        </div>
+                    </div>
+                    <div class="border-[1px] border-gray-300 p-4 rounded-xl hover:scale-105 transition duration-700 ease-in-out hover:shadow-eva">
+                        <div class="text-center py-8">
+                            <h1 class="text-3xl font-bold text-[#060f32]">Currently Learning</h1>
+                            <p class="text-lg">Always expanding my toolkit with new technologies</p>
+
+                        </div>
+                        <div class="text-lg font-semibold flex flex-row  gap-4 justify-center flex-wrap ">
+                            <p class="w-40 border-[1px] transition duration-700 ease-in-out border-blue-500 text-center rounded-full hover:text-white hover:bg-[#060f32]">TypeScript</p>
+                            <p class="w-40 border-[1px] transition duration-700 ease-in-out border-blue-500 text-center rounded-full hover:text-white hover:bg-[#060f32]">React</p>
+                            <p class="w-40 border-[1px] transition duration-700 ease-in-out border-blue-500 text-center rounded-full hover:text-white hover:bg-[#060f32]">Java</p>
+                            <p class="w-40 border-[1px] transition duration-700 ease-in-out border-blue-500 text-center rounded-full hover:text-white hover:bg-[#060f32]">Node.js</p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        <!--Hobbies section-->
+        <section id="hobbies" class="pb-16 bg-gray-200">
+            <div class="text-center py-12">
+                <h1 class="text-3xl font-bold text-[#060f32]">Hobbies</h1>
+            </div>
+            <div class="px-12 md:px-16">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8" >
+                    <div class="text-lg text-[#060f32] bg-slate-100 flex flex-col items-center gap-10 border-[1px] border-gray-400 px-4 py-8 hover:shadow-eva hover:scale-110 transition duration-700 ease-in-out rounded-xl">
+                        <p class="text-4xl text-blue-700"><i class="fa-solid fa-headphones fa-2xl"></i></p>
+                        <h1 class="text-2xl text-blue-900 font-bold">MUSIC</h1>
+                        <p>I love exploring different genres and finding new artists that inspire my coding sessions.</p>
+                    </div>
+                    <div class="text-lg text-[#060f32] bg-slate-100 flex flex-col items-center gap-10 border-[1px] border-gray-400 px-4 py-8 hover:shadow-eva hover:scale-110 transition duration-700 ease-in-out rounded-xl">
+                        <p class="text-4xl text-black "><i class="ri-football-line fa-2xl"></i></p>
+                        <h1 class="text-2xl text-blue-900 font-bold">FOOTBALL</h1>
+                        <p>Football is my favorite sport to play and watch. I enjoy playing with others  and watching  professional player performances.</p>
+                    </div>
+                    <div class="text-lg text-[#060f32] bg-slate-100 flex flex-col items-center gap-6 border-[1px] border-gray-400 px-4 py-8 hover:shadow-eva hover:scale-110 transition duration-700 ease-in-out rounded-xl">
+                        <p class="text-7xl text-violet-700 "><i class="ri-team-line"></i></p>
+                        <h1 class="text-2xl text-blue-900 font-bold">CONVERSATIONS</h1>
+                        <p>I love traveling as well as I value meaningful conversations and connecting with friends to share ideas and experiences.</p>
+                    </div>
+                    <div class="text-lg text-[#060f32] bg-slate-100 flex flex-col items-center gap-6 border-[1px] border-gray-400 px-4 py-8 hover:shadow-eva hover:scale-110 transition duration-700 ease-in-out rounded-xl">
+                        <p class="text-7xl text-black "><i class="ri-code-line"></i></p>
+                        <h1 class="text-2xl text-blue-900 font-bold">CODING</h1>
+                        <p>Building projects and solving problems through programming to enhance my technical skills.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--audio and video-->
+        <section id="media" class="px-12 lg:px-32 my-20 pb-10 bg-gray-200">
+            <div class="py-10">
+                <p class="text-2xl text-[#060f32] font-bold text-center">Multimedia showcase </p>
+            </div>
+            <div class="flex flex-col lg:flex-row gap-12 justify-between">
+            <div class="border-[1px] border-blue-600 flex flex-col items-center lg:self-center py-20 lg:py-28 lg:px-10 bg-slate-200 rounded-xl hover:scale-105 hover:shadow-eva transition duration-500 ease-in-out">
+                <p class="text-xl font-semibold text-[#060f32]">My Favorite Music</p>
+                <p class="text-lg font-medium text-blue-700 p-2">I enjoy this music while coding</p>
+            <audio controls>
+                <source src="images/audio.m4a">
+                Your web browser does not support this audio format
+            </audio>
+            </div>
+            <div class="flex flex-col gap-8 lg:w-[34rem] border-[1px] border-blue-600 bg-slate-200 rounded-t-xl hover:scale-105 hover:shadow-eva transition duration-500 ease-in-out">
+                <div class="text-center">
+                    <p class="text-xl font-semibold text-[#060f32]">video that I like</p>
+                    <p class="text-lg font-medium text-blue-700">I enjoy this video because it helps me to reflesh</p>
+                </div>
+                <video controls>
+                    <source src="images/video.mp4">
+                    Your web browser does not support this video format
+                </video>
+            </div>
+            </div>
+
+        </section>
+        <!--get in touch-->
+        <section id="contact" class="px-12">
+            <div>
+                <p class="text-2xl text-[#060f32] font-bold text-center">Get in Touch </p>
+                <p class="text-lg text-[#060f32] text-center">Whether you have a project in mind, want to collaborate, 
+                    or just want to connect with a fellow developer,<br class="hidden lg:block"> I'd love to hear from you. 
+                    Let's build something amazing together!
+                </p>
+            </div>
+            <div class="flex flex-col  gap-4 lg:flex-row my-8">
+                <div class="flex gap-2 bg-orange-100 p-2 md:p-4  rounded-lg w-full">
+                    <p class="bg-blue-600 bg-opacity-60 w-14 h-14 flex items-center justify-center text-white rounded-full"><i class="fa-solid fa-envelope fa-xl"></i></p>
+                    <div>
+                        <h1 class="text-2xl font-semibold text-blue-950">Email</h1>
+                        <p class="italic text-sm md:font-semibold text-blue-600 ">nkurunzizaevariste060@gmail.com</p>
+                    </div>
+                </div>
+                <div class="flex gap-2 bg-orange-100 p-4 rounded-lg w-full">
+                    <p class="bg-blue-600 bg-opacity-60 w-14 h-14 flex items-center justify-center text-white rounded-full"><i class="fa-solid fa-phone fa-xl"></i></p>
+                    <div>
+                        <h1 class="text-2xl font-semibold text-blue-950">Phone</h1>
+                        <p class="italic font-semibold text-blue-600">+250787400831</p>
+                    </div>
+                </div>
+                <div class="flex gap-2 bg-orange-100 p-4 rounded-lg w-full">
+                    <p class="bg-blue-600 bg-opacity-60 w-14 h-14 flex items-center justify-center text-white rounded-full"><i class="fa-solid fa-location-dot fa-xl"></i></p>
+                    <div>
+                        <h1 class="text-2xl font-semibold text-blue-950">Location</h1>
+                        <p class="italic font-semibold text-blue-600">Kigali, Rwanda</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+    </main>
+    <!--footer-->
+    <footer class="bg-slate-300 sm:p-4 pb-20 space-y-4 relative">
+        <div>
+             <p class="text-4xl text-[#060f32] font-bold text-center">Follow Me </p>
+        </div>
+        <div class="mx-12">
+          <ul class="text-2xl flex gap-12 md:gap-20 justify-center text-[#060f32]">
+            <li class="hover:text-blue-500"><a href="https://www.linkedin.com/in/evariste-nkurunziza-b47964364/"><i class="fa-brands fa-linkedin"></i></a></li>
+            <li class="hover:text-blue-500"><a href="https://www.instagram.com/differancela?igsh=aDU5Njh2emI5NzN4"><i class="fa-brands fa-instagram"></i></a></li>
+            <li class="hover:text-blue-500"><a href="https://x.com/compEvariste"><i class="fa-brands fa-x-twitter"></i></a></i></li>
+            <li class="hover:text-blue-500"><a href="https://www.facebook.com/evaristevazzo.ladifferance"><i class="fa-brands fa-facebook"></i></a></li>
+            <li class="hover:text-blue-500"><a href="https://www.facebook.com/evaristevazzo.ladifferance"><i class="fa-brands fa-threads"></i></a></li>
+
+          </ul>
+        </div>
+        <div>
+            <p class="text-center md:text-2xl">&copy;2025 Evariste. All right Reserved</p>
+        </div>
+        <div class="absolute bottom-2 text-blue-500  sm:right-2 sm:bottom-2 right-1/2">
+            <a href="">
+                <p class="w-12 h-12 border-2  border-blue-500 rounded-lg flex justify-center items-center"><a href="header"><i class="fa-solid fa-arrow-up fa-2xl"></i></a></p>
+                <p>back to top</p>
+            </a>
+        </div>
+    </footer>
+    <script>
+        
+    </script>
+
+    <script type="module" src="/src/main.js"></script>
+</body>
+</html>
