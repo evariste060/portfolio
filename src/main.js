@@ -18,6 +18,7 @@ function ReplyFeedback(){
     let name = document.getElementById('name').value
     let email = document.getElementById('email').value
     let feedback = document.getElementById('feedback').value
+    console.log(document.getElementById('feedback').value)
     let response = document.getElementById('response');
     if(name&&email&&feedback){
     response.innerHTML = `
